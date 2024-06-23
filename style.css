@@ -1,6 +1,7 @@
 :root{
     /*fonts*/
-    --font-bold: 'Urbanist', 'bold';
+    --font-bold: 'Urbanist';
+    --font-normal: 'Urbanist', 'regular';
 
     /*Dark view Palette*/
     --bg-color:      #1b1b1b;
@@ -21,14 +22,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font-bold);
+    font-family: 'Urbanist';
 }
 
 html, body, #app{
     width: 100vw;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    
+    overflow: hidden;
     /* background-color: var(--bg-color); */
 
 }
@@ -48,7 +49,7 @@ body{
 }
 
 .siderbar{
-    width: 15%;
+    width: 20%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -92,7 +93,7 @@ body{
 }
 
 .menu li i{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
@@ -113,8 +114,9 @@ body{
     text-decoration: none;
     color: var(--third-color);
     background-color: var(--destak-color);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
+    transition: all .2s;
 
 }
 
@@ -129,5 +131,38 @@ body{
     background-color: var(--destak-color);
     font-size: 18px;
     font-weight: bold;
+    transition: all .2s;
+}
 
+
+.display-main{
+    width: 100%;
+}
+
+.display-main .header-main{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    /* border: solid 1px var(--destak-color); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.header-main .display-greet-user{
+    /* border: solid 1px var(--destak-color); */
+    padding: 10px;
+}
+
+.display-greet-user .title-greet-user{
+    font-family: 'Urbanist';
+    font-weight: lighter;
+    font-size: 45px;
+    line-height: 60px;
+}
+
+.display-greet-user .text-name-user{
+    font-family: 'Urbanist';
+    font-weight: bolder;
 }
