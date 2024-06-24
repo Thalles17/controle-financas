@@ -4,10 +4,10 @@
     --font-normal: 'Urbanist', 'regular';
 
     /*Dark view Palette*/
-    --bg-color:      #1b1b1b;
+    --bgColor-dark:      #1b1b1b;
     --secondColor-dark:  #2b2b2b;
-    --third-color:   #ffffff;
-    --destak-color:  #866ffd;
+    --thirdColor-dark:   #ffffff;
+    --destakColor-dark:  #866ffd;
 
 
     /*Light view Palette*/
@@ -40,7 +40,6 @@ body{
 }
 
 #app{
-    
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -165,4 +164,52 @@ body{
 .display-greet-user .text-name-user{
     font-family: 'Urbanist';
     font-weight: bolder;
+}
+
+#input-search{
+    position: relative;
+    width: 450px;
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: var(--bgColor-dark);
+
+}
+
+#icon-search{
+    position: absolute;
+    top: 41px !important; 
+    left: 803px;
+    z-index: 2;
+    /* background: var(--secondColor-dark); */
+    color: #656464;
+    /* border: 1px solid red; */
+    font-size: 18px;
+}
+
+.display-cards{
+    width: 100%;
+    margin-top: -5px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.display-cards .card{
+    width: 160px;
+    height: 200px;
+    border: solid 1px var(--destak-color);
+    border-radius: 15px;
+    
+}
+
+.header-card, .body-card, .footer-card{
+    width: 100%;
+    padding: 16px;
+}
+
+.header-card{
+    height: 40%;
 }
